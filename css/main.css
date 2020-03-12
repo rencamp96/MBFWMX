@@ -1,0 +1,326 @@
+/* //////////////////////////////////////////////
+//////               Fonts                 //////
+////////////////////////////////////////////// */
+@font-face {
+  font-family: DMSerif;
+  src: url(./fonts/DMSerifText-Regular.ttf);
+}
+@font-face {
+  font-family: CrimsonText;
+  src: url(./fonts/CrimsonText-Regular.ttf);
+}
+
+
+
+/* //////////////////////////////////////////////
+//////           Paleta de color           //////
+////////////////////////////////////////////// */
+  /* crema = #f3efe8
+  azul = #8bab9a
+  rojo = #f1a082
+  verde = #c1cea1
+  amarillo = #ebd99d */
+
+
+
+/* //////////////////////////////////////////////
+//////                 Texto               //////
+////////////////////////////////////////////// */
+html, body{
+	background-color: #f3efe8;
+}
+
+h1 {
+	color: black;
+	font-family: DMSerif;
+  font-size: 3vw;
+}
+
+h6 {
+	color: black;
+	font-family: DMSerif;
+  font-size: .7vw;
+}
+
+p {
+	color: black;
+	font-family: CrimsonText;
+  font-size: 1vw;
+  line-height: 1.485vw;
+  text-align: justify;
+}
+
+
+
+/* //////////////////////////////////////////////
+//////         Ventanas cerrables          //////
+////////////////////////////////////////////// */
+.alert {
+  padding: 10px;
+  background-color: #f3efe8;
+  position: absolute;
+  left: 45vw;
+  top: 6vw;
+  color: black;
+  border: 2px solid black;
+  width: 30vw;
+  height: 10vw;
+  z-index: 1;
+  font-size: 1vw;
+}
+.closebtn {
+  margin-left: 15px;
+  float: right;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.closebtn:hover {
+  color: red;
+}
+
+hr.new1 {
+  border-top: 1px solid black;
+}
+
+/* //////////////////////////////////////////////
+//////          diseño de párrafo          //////
+////////////////////////////////////////////// */
+#info1 {
+  width: 12vw;
+  position: absolute;
+  top: 18.5vw;
+  left: 55vw;
+}
+
+#titulo {
+  line-height: 3vw;
+  text-align: right;
+}
+
+/* //////////////////////////////////////////////
+//////         Botones de carpetas         //////
+////////////////////////////////////////////// */
+
+#boton_texto{
+  margin-top: .5vw;
+}
+
+#boton1{
+  position: absolute;
+  left: 82vw;
+  top: 6vw;
+}
+
+#boton2{
+  position: absolute;
+  left: 82vw;
+  top: 13vw;
+}
+
+#boton3{
+  position: absolute;
+  left: 82vw;
+  top: 20vw;
+}
+
+#boton4{
+  position: absolute;
+  left: 82vw;
+  top: 27vw;
+}
+
+#boton5{
+  position: absolute;
+  left: 11vw;
+  top: 35vw;
+}
+
+#boton6{
+  position: absolute;
+  left: 18vw;
+  top: 35vw;
+}
+
+#boton7{
+  position: absolute;
+  left: 14vw;
+  top: 42vw;
+}
+
+#boton8{
+  position: absolute;
+  left: 21vw;
+  top: 42vw;
+}
+
+/* ---------------Boton Rojo------------------ */
+
+.botonRojo{
+    background:url(./carpetas_img/c_rojo.png) no-repeat;
+    background-size: 100% 100%;
+    cursor:pointer;
+    border:none;
+    width:5vw;
+    height: 3.5vw;
+    font-family: DMSerif;
+}
+
+.botonRojo:hover {
+    background:url(./carpetas_img/c_hover.png) no-repeat;
+    background-size: cover;
+    button:focus {outline:0;}
+}
+
+.botonRojo:active {
+    background:url(./carpetas_img/c_click.png) no-repeat;
+    background-size: cover;
+    button:focus {outline:0;}
+}
+
+.botonRojo:focus {
+  outline:0;
+}
+
+/* --------------Boton Verde---------------- */
+
+.botonVerde{
+    background:url(./carpetas_img/c_verde.png) no-repeat;
+    background-size: 100% 100%;
+    cursor:pointer;
+    border:none;
+    width:5vw;
+    height: 3.5vw;
+    font-family: DMSerif;
+}
+
+.botonVerde:hover {
+    background:url(./carpetas_img/c_hover.png) no-repeat;
+    background-size: cover;
+    button:focus {outline:0;}
+}
+
+.botonVerde:active {
+    background:url(./carpetas_img/c_click.png) no-repeat;
+    background-size: cover;
+    button:focus {outline:0;}
+}
+
+.botonVerde:focus {
+  outline:0;
+}
+
+/* ---------------Boton Amarillo------------------ */
+
+.botonAmarillo{
+    background:url(./carpetas_img/c_amarillo.png) no-repeat;
+    background-size: 100% 100%;
+    cursor:pointer;
+    border:none;
+    width:5vw;
+    height: 3.5vw;
+    font-family: DMSerif;
+}
+
+.botonAmarillo:hover {
+    background:url(./carpetas_img/c_hover.png) no-repeat;
+    background-size: cover;
+    button:focus {outline:0;}
+}
+
+.botonAmarillo:active {
+    background:url(./carpetas_img/c_click.png) no-repeat;
+    background-size: cover;
+    button:focus {outline:0;}
+}
+
+.botonAmarillo:focus {
+  outline:0;
+}
+
+/* -----------------Boton Azul------------------- */
+
+.botonAzul{
+    background:url(./carpetas_img/c_azul.png) no-repeat;
+    background-size: 100% 100%;
+    cursor:pointer;
+    border:none;
+    width:5vw;
+    height: 3.5vw;
+    font-family: DMSerif;
+}
+
+.botonAzul:hover {
+    background:url(./carpetas_img/c_hover.png) no-repeat;
+    background-size: cover;
+    button:focus {outline:0;}
+}
+
+.botonAzul:active {
+    background:url(./carpetas_img/c_click.png) no-repeat;
+    background-size: cover;
+    button:focus {outline:0;}
+}
+
+.botonAzul:focus {
+  outline:0;
+}
+
+
+/* //////////////////////////////////////////////
+//////             P5 Sketch               //////
+////////////////////////////////////////////// */
+
+#sketch-holder{
+  position: absolute;
+  top: 1vw;
+  left: 25vw;
+  border: 2px solid black;
+  width: 25vw;
+}
+
+/* //////////////////////////////////////////////
+//////          Cuadros de fondo           //////
+////////////////////////////////////////////// */
+
+#cuadroAzul{
+  background-color: #8bab9a;
+  position: absolute;
+  top: 8vw;
+  left: 50vw;
+  width: 30vw;
+  height: 13vw;
+  z-index: -1;
+}
+
+#cuadroRojo{
+  background-color: #f1a082;
+  position: absolute;
+  top: 3.5vw;
+  left: 28vw;
+  width: 25vw;
+  height: 39vw;
+  z-index: -5;
+}
+
+#cuadroVerde{
+  background-color: #c1cea1;
+  position: absolute;
+  top: 70vh;
+  left: 70vw;
+  width: 30vw;
+  height: 30vh;
+  z-index: -5;
+}
+
+#cuadroAmarillo{
+  background-color: #ebd99d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35vw;
+  height: 20vw;
+  z-index: -5;
+}
