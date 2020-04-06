@@ -2,87 +2,152 @@
 //////               Fonts                 //////
 ////////////////////////////////////////////// */
 @font-face {
-  font-family: DMSerif;
-  src: url(./fonts/DMSerifText-Regular.ttf);
+  font-family: MontserratRegular;
+  src: url(./fonts/Montserrat-Regular.ttf);
 }
 @font-face {
-  font-family: CrimsonText;
-  src: url(./fonts/CrimsonText-Regular.ttf);
+  font-family: MontserratMedium;
+  src: url(./fonts/Montserrat-Medium.ttf);
 }
 
-
+@font-face {
+  font-family: MontserratLight;
+  src: url(./fonts/Montserrat-Light.ttf);
+}
 
 /* //////////////////////////////////////////////
 //////           Paleta de color           //////
 ////////////////////////////////////////////// */
-  /* crema = #f3efe8
-  azul = #8bab9a
-  rojo = #f1a082
-  verde = #c1cea1
-  amarillo = #ebd99d */
-
-
+  /* gris = #ebebeb
+  azul = #0000ff
+  rosa = #ff066c
+  verde = #24ff00
+  rosa-claro = #ffd8e8 */
 
 /* //////////////////////////////////////////////
 //////                 Texto               //////
 ////////////////////////////////////////////// */
 html, body{
-	background-color: #f3efe8;
+  font-family: MontserratRegular;
+	background-color: #d5dbdb;
+  color: #0000ff;
+  display:flex;
 }
 
 h1 {
-	color: black;
-	font-family: DMSerif;
-  font-size: 3vw;
+	color: #0000ff;
+	font-family: MontserratRegular;
+  font-size: 4.5vw;
+} @media only screen and (max-width: 1060px) {
+  h1 {
+    font-size: 6vw;
+  }
+} @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 10vw;
+  }
+}
+
+h2 {
+	color: #0000ff;
+	font-family: MontserratLight;
+  font-size: 2.3vw;
+  line-height: .7;
+} @media only screen and (max-width: 1060px) {
+  h2 {
+    font-size: 3vw;
+  }
+} @media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 4.8vw;
+  }
 }
 
 h6 {
-	color: black;
-	font-family: DMSerif;
-  font-size: .7vw;
+	color: #0000ff;
+	font-family: MontserratMedium;
+  font-size: .6vw;
+} @media only screen and (max-width: 1060px) {
+  h6 {
+    font-size: .9vw;
+  }
+} @media only screen and (max-width: 600px) {
+  h6 {
+    font-size: 2.1vw;
+  }
 }
 
 p {
-	color: black;
-	font-family: CrimsonText;
-  font-size: 1vw;
+	color: #0000ff;
+	font-family: MontserratMedium;
+  font-size: .8vw;
   line-height: 1.485vw;
-  text-align: justify;
+} @media only screen and (max-width: 1060px) {
+  p {
+    font-size: 1vw;
+    line-height: 2vw;
+  }
+} @media only screen and (max-width: 600px) {
+  p {
+    font-size: 1.8vw;
+    line-height: 3vw;
+  }
 }
 
+#center {
+  position: relative;
+}
 
 
 /* //////////////////////////////////////////////
 //////         Ventanas cerrables          //////
 ////////////////////////////////////////////// */
 .alert {
-  padding: 10px;
-  background-color: #f3efe8;
+  display: inline-block;
+  padding: 1vw;
+  background-color: #d5dbdb;
   position: absolute;
   left: 45vw;
-  top: 6vw;
-  color: black;
-  border: 2px solid black;
-  width: 30vw;
-  height: 10vw;
-  z-index: 1;
-  font-size: 1vw;
+  top: 7vw;
+  color: #0000ff;
+  border: 2px solid #0000ff;
+  width: 27vw;
+  height: 11.5vw;
+  z-index: 10;
+  font-size: .8vw;
+} @media only screen and (max-width: 1060px) {
+  .alert {
+    width: 35vw;
+    height: 15vw;
+    left: 44vw;
+    top: 23vw;
+    font-size: 1.2vw;
+  }
+} @media only screen and (max-width: 600px) {
+  .alert {
+    top: 93vw;
+    left: 5vw;
+    width: 65vw;
+    height: 27vw;
+    font-size: 2.5vw;
+  }
 }
+
 .closebtn {
   margin-left: 15px;
   float: right;
-  color: black;
+  color: #0000ff;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 20px;
+  font-size: 2vw;
+  line-height: 1vw;
   cursor: pointer;
 }
 .closebtn:hover {
-  color: red;
+  color: #ff066c;
 }
 
 hr.new1 {
-  border-top: 1px solid black;
+  border-top: 1px solid #0000ff;
 }
 
 /* //////////////////////////////////////////////
@@ -91,13 +156,322 @@ hr.new1 {
 #info1 {
   width: 12vw;
   position: absolute;
-  top: 18.5vw;
-  left: 55vw;
+  top: 20.5vw;
+  left: 61.5vw;
+} @media only screen and (max-width: 1060px){
+  #info1 {
+    top: 40vw;
+    left: 65vw;
+    width: 14.5vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #info1 {
+    top: 123vw;
+    left: 7vw;
+    width: 27vw;
+    z-index: 10;
+  }
 }
 
 #titulo {
-  line-height: 3vw;
   text-align: right;
+  padding-top: 2vw;
+  margin: 0;
+  padding-right: .5vw;
+} @media only screen and (max-width: 600px){
+  #titulo {
+    padding-top: 3vw;
+    text-align: left;
+    padding-left: .5vw;
+  }
+}
+
+#subtitulo {
+  text-align: right;
+  margin: 0;
+  padding-right: .5vw;
+} @media only screen and (max-width: 600px){
+  #subtitulo {
+    text-align: left;
+    padding-left: .5vw;
+  }
+}
+
+/* //////////////////////////////////////////////
+//////             P5 Sketch               //////
+////////////////////////////////////////////// */
+
+#sketch-holder{
+  position: absolute;
+  top: 1vw;
+  left: 27vw;
+  border: 2px solid #0000ff;
+} @media only screen and (max-width: 1060px){
+  #sketch-holder{
+    top: 0vw;
+    left: 17vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #sketch-holder{
+    top: 0vw;
+    left: 10vw;
+  }
+}
+
+/* //////////////////////////////////////////////
+//////          Cuadros de fondo           //////
+////////////////////////////////////////////// */
+
+#cuadroVerde1{
+  background-color: #24ff00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35vw;
+  height: 12vw;
+  z-index: -5;
+} @media only screen and (max-width: 600px){
+  #cuadroVerde1{
+    top: 7vw;
+    width: 75vw;
+    height: 23vw;
+    z-index: -50;
+  }
+}
+
+#cuadroVerde2{
+  background-color: #24ff00;
+  position: absolute;
+  top: 10vw;
+  left: 50vw;
+  width: 26vw;
+  height: 12.5vw;
+  z-index: -1;
+} @media only screen and (max-width: 1060px){
+  #cuadroVerde2{
+    top: 26vw;
+    left: 44vw;
+    width: 40vw;
+    height: 17vw;
+  }
+} @media only screen and (max-width: 600px){
+  #cuadroVerde2{
+    top: 100vw;
+    left: 15vw;
+    width: 65vw;
+    height: 27vw;
+    z-index: 5;
+  }
+}
+
+#cuadroVerde3{
+  background-color: #24ff00;
+  position: absolute;
+  height: 100%;
+  min-height: 45vw;
+  left: 0;
+  width: 30vw;
+  top: 0;
+  z-index: -102;
+  overflow-x: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #cuadroVerde3{
+    height: 100vw;
+    min-height: 100vh;
+    width: 25vw;
+  }
+} @media only screen and (max-width: 600px){
+  #cuadroVerde3{
+    width: 0;
+    height: 0;
+  }
+}
+
+#cuadroVerde3Frame{
+  top: 0;
+  background-color: #d5dbdb;
+  position: absolute;
+  height: 41.5vw;
+  left: 0vw;
+  width: 30vw;
+  z-index: -101;
+  overflow-x: hidden !important;
+}
+
+#cuadroVerde4{
+  background-color: #24ff00;
+  position: absolute;
+  height: 100%;
+  min-height: 45vw;
+  left: 74vw;
+  width: 26vw;
+  top: 0;
+  z-index: -7;
+  overflow-x: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #cuadroVerde4{
+    height: 100vw;
+    min-height: 100vh;
+  }
+} @media only screen and (max-width: 600px){
+  #cuadroVerde4{
+    width: 15vw;
+    left: 85vw;
+    height: 130vw;
+    min-height: 130vh;
+  }
+}
+
+#cuadroVerde4Frame{
+  top: 0;
+  background-color: #d5dbdb;
+  position: absolute;
+  height: 37vw;
+  left: 70vw;
+  width: 30vw;
+  z-index: -6;
+  overflow-x: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #cuadroVerde4Frame {
+    height: 75vw;
+  }
+} @media only screen and (max-width: 600px){
+  #cuadroVerde4Frame{
+    width: 15vw;
+    height: 140vw;
+    left: 85vw;
+  }
+}
+
+#cuadroAzul1{
+  background-color: #0000ff;
+  position: absolute;
+  top: 12vw;
+  left: 0;
+  width: 35vw;
+  height: 3vw;
+  z-index: -5;
+} @media only screen and (max-width: 600px){
+  #cuadroAzul1 {
+    top: 30vw;
+    height: 10vw;
+    z-index: -50;
+  }
+}
+
+#cuadroRojo1{
+  background-color: #ff066c;
+  position: absolute;
+  top: 3vw;
+  left: 29vw;
+  width: 23vw;
+  height: 34.5vw;
+  z-index: -5;
+} @media only screen and (max-width: 1060px){
+  #cuadroRojo1{
+    top: 3vw;
+    left: 20vw;
+    width: 35vw;
+    height: 53vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #cuadroRojo1{
+    top: 5vw;
+    left: 5vw;
+    width: 55vw;
+    height: 83vw
+  }
+}
+
+#cuadroRojo2{
+  background-color: #ff066c;
+  position: absolute;
+  top: 0;
+  left: 60vw;
+  width: 40vw;
+  height: 8vw;
+  z-index: -5;
+} @media only screen and (max-width: 1060px){
+  #cuadroRojo2{
+    left: 61vw;
+    width: 39vw;
+    height: 6vw;
+  }
+} @media only screen and (max-width: 600px){
+  #cuadroRojo2{
+    width: 0;
+    height: 0;
+  }
+}
+
+#videoFrame{
+  position: absolute;
+  background: #d5dbdb;
+  z-index: -55;
+  top: 0;
+  left: 60vw;
+  width: 40vw;
+  height: 100%;
+  min-height: 45vw;
+  overflow-x: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #videoFrame {
+    left: 61vw;
+    width: 39vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #videoFrame {
+    left: 56vw;
+    width: 44vw;
+  }
+}
+
+#videoStatic {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 25vw;
+  width: auto;
+  height: 100%;
+  min-height: 45vw;
+  overflow-x: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #videoStatic {
+    left: 0;
+    width: 61vw;
+    height: auto;
+    top: -15vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #videoStatic {
+    left: 0;
+    width: 85vw;
+    height: auto;
+    top: 15vw;
+  }
+}
+
+#videoInteractivo {
+  position: absolute;
+  z-index: 1;
+  top: 25vw;
+  left: 76vw;
+  width: 24vw;
+  height: auto;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #videoInteractivo {
+    top: 60vw;
+    left: 52vw;
+    width: 48vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #videoInteractivo {
+    top: 120vw;
+    left: 45vw;
+    width: 55vw;
+  }
 }
 
 /* //////////////////////////////////////////////
@@ -110,217 +484,185 @@ hr.new1 {
 
 #boton1{
   position: absolute;
-  left: 82vw;
-  top: 6vw;
+  left: 78vw;
+  top: 0vw;
+} @media only screen and (max-width: 1060px){
+  #boton1 {
+    left: 62vw;
+    top: 3vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton1 {
+    left: 72.5vw;
+    top: 0vw;
+  }
 }
 
 #boton2{
   position: absolute;
-  left: 82vw;
-  top: 13vw;
+  left: 78vw;
+  top: 7vw;
+} @media only screen and (max-width: 1060px){
+  #boton2 {
+    left: 62vw;
+    top: 13vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton2 {
+    left: 72.5vw;
+    top: 25vw;
+  }
 }
 
 #boton3{
   position: absolute;
-  left: 82vw;
-  top: 20vw;
+  left: 78vw;
+  top: 14vw;
+} @media only screen and (max-width: 1060px){
+  #boton3 {
+    left: 73vw;
+    top: 13vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton3 {
+    left: 72.5vw;
+    top: 50vw;
+  }
 }
 
 #boton4{
   position: absolute;
-  left: 82vw;
-  top: 27vw;
+  left: 86vw;
+  top: 2vw;
+} @media only screen and (max-width: 1060px){
+  #boton4 {
+    left: 17vw;
+    top: 58vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton4 {
+    left: 12.5vw;
+    top: 150vw;
+  }
 }
 
 #boton5{
   position: absolute;
-  left: 11vw;
-  top: 35vw;
+  left: 6vw;
+  top: 25vw;
+} @media only screen and (max-width: 1060px){
+  #boton5 {
+    left: 28vw;
+    top: 58vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton5 {
+    left: 35vw;
+    top: 150vw;
+    z-index: 10;
+  }
 }
 
 #boton6{
   position: absolute;
-  left: 18vw;
-  top: 35vw;
+  left: 14vw;
+  top: 28vw;
+} @media only screen and (max-width: 1060px){
+  #boton6 {
+    left: 39vw;
+    top: 58vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton6 {
+    left: 5vw;
+    top: 173vw;
+  }
 }
 
 #boton7{
   position: absolute;
-  left: 14vw;
-  top: 42vw;
+  left: 6vw;
+  top: 32vw;
+} @media only screen and (max-width: 1060px){
+  #boton7 {
+    left: 28vw;
+    top: 68vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton7 {
+    left: 27.5vw;
+    top: 173vw;
+  }
 }
+
 
 #boton8{
   position: absolute;
-  left: 21vw;
-  top: 42vw;
+  left: 14vw;
+  top: 35vw;
+} @media only screen and (max-width: 1060px){
+  #boton8 {
+    left: 39vw;
+    top: 68vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton8 {
+    left: 50vw;
+    top: 173vw;
+  }
 }
 
-/* ---------------Boton Rojo------------------ */
 
-.botonRojo{
-    background:url(./carpetas_img/c_rojo.png) no-repeat;
-    background-size: 100% 100%;
-    cursor:pointer;
-    border:none;
-    width:5vw;
-    height: 3.5vw;
-    font-family: DMSerif;
+#boton9{
+  position: absolute;
+  left: 6vw;
+  top: 18vw;
+} @media only screen and (max-width: 1060px){
+  #boton9 {
+    left: 29vw;
+    top: 78vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton9 {
+    left: 72.5vw;
+    top: 173vw;
+  }
 }
 
-.botonRojo:hover {
+/* ---------------Carpeta------------------ */
+
+.botonRosa{
+  background:url(./carpetas_img/c_rosa.png) no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  border: none;
+  width: 5vw;
+  height: 3.5vw;
+  font-family: DMSerif;
+} @media only screen and (max-width: 1060px){
+  .botonRosa {
+    width: 7.5vw;
+    height: 5.25vw;
+  }
+} @media only screen and (max-width: 600px){
+  .botonRosa {
+    width: 17vw;
+    height: 12vw;
+  }
+}
+
+.botonRosa:hover {
     background:url(./carpetas_img/c_hover.png) no-repeat;
     background-size: cover;
     button:focus {outline:0;}
 }
 
-.botonRojo:active {
+.botonRosa:active {
     background:url(./carpetas_img/c_click.png) no-repeat;
     background-size: cover;
     button:focus {outline:0;}
 }
 
-.botonRojo:focus {
+.botonRosa:focus {
   outline:0;
-}
-
-/* --------------Boton Verde---------------- */
-
-.botonVerde{
-    background:url(./carpetas_img/c_verde.png) no-repeat;
-    background-size: 100% 100%;
-    cursor:pointer;
-    border:none;
-    width:5vw;
-    height: 3.5vw;
-    font-family: DMSerif;
-}
-
-.botonVerde:hover {
-    background:url(./carpetas_img/c_hover.png) no-repeat;
-    background-size: cover;
-    button:focus {outline:0;}
-}
-
-.botonVerde:active {
-    background:url(./carpetas_img/c_click.png) no-repeat;
-    background-size: cover;
-    button:focus {outline:0;}
-}
-
-.botonVerde:focus {
-  outline:0;
-}
-
-/* ---------------Boton Amarillo------------------ */
-
-.botonAmarillo{
-    background:url(./carpetas_img/c_amarillo.png) no-repeat;
-    background-size: 100% 100%;
-    cursor:pointer;
-    border:none;
-    width:5vw;
-    height: 3.5vw;
-    font-family: DMSerif;
-}
-
-.botonAmarillo:hover {
-    background:url(./carpetas_img/c_hover.png) no-repeat;
-    background-size: cover;
-    button:focus {outline:0;}
-}
-
-.botonAmarillo:active {
-    background:url(./carpetas_img/c_click.png) no-repeat;
-    background-size: cover;
-    button:focus {outline:0;}
-}
-
-.botonAmarillo:focus {
-  outline:0;
-}
-
-/* -----------------Boton Azul------------------- */
-
-.botonAzul{
-    background:url(./carpetas_img/c_azul.png) no-repeat;
-    background-size: 100% 100%;
-    cursor:pointer;
-    border:none;
-    width:5vw;
-    height: 3.5vw;
-    font-family: DMSerif;
-}
-
-.botonAzul:hover {
-    background:url(./carpetas_img/c_hover.png) no-repeat;
-    background-size: cover;
-    button:focus {outline:0;}
-}
-
-.botonAzul:active {
-    background:url(./carpetas_img/c_click.png) no-repeat;
-    background-size: cover;
-    button:focus {outline:0;}
-}
-
-.botonAzul:focus {
-  outline:0;
-}
-
-
-/* //////////////////////////////////////////////
-//////             P5 Sketch               //////
-////////////////////////////////////////////// */
-
-#sketch-holder{
-  position: absolute;
-  top: 1vw;
-  left: 25vw;
-  border: 2px solid black;
-  width: 25vw;
-}
-
-/* //////////////////////////////////////////////
-//////          Cuadros de fondo           //////
-////////////////////////////////////////////// */
-
-#cuadroAzul{
-  background-color: #8bab9a;
-  position: absolute;
-  top: 8vw;
-  left: 50vw;
-  width: 30vw;
-  height: 13vw;
-  z-index: -1;
-}
-
-#cuadroRojo{
-  background-color: #f1a082;
-  position: absolute;
-  top: 3.5vw;
-  left: 28vw;
-  width: 25vw;
-  height: 39vw;
-  z-index: -5;
-}
-
-#cuadroVerde{
-  background-color: #c1cea1;
-  position: absolute;
-  top: 70vh;
-  left: 70vw;
-  width: 30vw;
-  height: 30vh;
-  z-index: -5;
-}
-
-#cuadroAmarillo{
-  background-color: #ebd99d;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 35vw;
-  height: 20vw;
-  z-index: -5;
 }
